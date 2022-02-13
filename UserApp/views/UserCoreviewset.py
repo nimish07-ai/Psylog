@@ -88,6 +88,7 @@ class UserCoreOperationsViewset(CustomViewset, viewsets.ModelViewSet):
                         user.gender = gender
                         user.country = country
                         user.save()
+                        auth.login(request, user)
 
                         return Response({'success': 'User created successfully'}, status=HTTP_201_CREATED)
 

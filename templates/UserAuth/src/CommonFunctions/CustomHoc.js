@@ -41,7 +41,7 @@ export default function UpperHoc (props)
     const Error = useSelector(selectError);
     const Success = useSelector(SuccessSelector);
     // console.log(props)
-    // console.log(props.redirect,Error,Success,"dd    ")
+    console.log(props.redirect,Error,Success,"dd    ")
 
     if (status ==="loading")
     {

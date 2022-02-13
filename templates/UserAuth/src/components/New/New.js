@@ -131,8 +131,7 @@ let questions={
                 <section className={assesementcss["assessment-intro" ]}>
                     <h1 className={assesementcss["assessment-intro-head"]}>Mood Assessment</h1>
                     <h2 className={assesementcss["assessment-intro-caption"]}>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
-                        dolore.
+                        To understand your mental health , Start the assessment
                     </h2>
                     <a href="" className={assesementcss["assessment-start-btn"]} onClick={ev=>{ev.preventDefault();
                         setState({...state,mode: 0,q_no:0})

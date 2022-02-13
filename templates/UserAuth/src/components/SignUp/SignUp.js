@@ -9,6 +9,7 @@ import {
 } from "../../features/UserAuth/AuthSlicer"
 import {FetchCallSFK} from "../../CommonFunctions/FetchCall";
 import {Signup} from "../../features/UserAuth/Signup";
+import UpperHoc from "../../CommonFunctions/CustomHoc";
 
 
 
@@ -35,9 +36,10 @@ export default function SignUp(props)
 
     return (
         <>
+            <UpperHoc redirect="/record/new/" Re={true}>
 
 
-            <section className={Formcss["form-section"]}>
+                    <section className={Formcss["form-section"]}>
                 <h1 className={Formcss["form-heading"]}>Sign up with your email</h1>
                 <p className={Formcss["form-caption"]}>
                     Already have an account? <a href="/auth/login/">Sign in</a>
@@ -45,6 +47,7 @@ export default function SignUp(props)
                 <form  onSubmit={ev=>{
 
                     ev.preventDefault()
+                    console.log(setTimeout(ev=>{window.location.href="/record/list/"},3000))
                     dispatch(Signup(state))
                 }}>
                     <div className={Formcss["input-div"]}>
@@ -381,7 +384,7 @@ export default function SignUp(props)
             </section>
 
 
-
+                </UpperHoc>
 
         </>
     );

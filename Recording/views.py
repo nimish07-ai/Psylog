@@ -41,3 +41,23 @@ class MediateOperationsViewset(CustomViewset,mixins.ListModelMixin,GenericViewSe
             "statsqestion")
 
         return queryset, True
+
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+
+        if request.user.is_anonymous:
+            return Response({}), False
+
+        queryset = queryset.filter(user=request.user.id)
+
+        return queryset
+
+
+    # def Condition_check(self, request, queryset, *args, **kwargs):
+    #     # return Response if condition Failes else return true at end
+    #     if request.user.is_anonymous:
+    #         return Response({}), False
+    #
+    #     queryset = queryset.filter(user=request.user.id)
+    #
+    #     return queryset, True
