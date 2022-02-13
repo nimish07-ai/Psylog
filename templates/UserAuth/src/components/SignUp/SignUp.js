@@ -376,7 +376,7 @@ export default function SignUp(props)
                                id="password"/>
                     </div>
                     <input type="submit" className={Formcss["submit-btn"]} value="Create account"   />
-                    <span className="warning-text">Error:Invalid login credentials. Please try again.</span>
+                    {/*<span className="warning-text">Error:Invalid login credentials. Please try again.</span>*/}
                 </form>
             </section>
 

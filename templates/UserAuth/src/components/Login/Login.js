@@ -52,7 +52,7 @@ export default function Login(props)
                         </div>
                         <input type="submit" className={Formcss["submit-btn"]} value="Continue"
                                onClick={ev=>{dispatch(LoginThunk(state))}} />
-                        <span className="warning-text">Error:Invalid login credentials. Please try again.</span>
+                        {/*<span className="warning-text">Error:Invalid login credentials. Please try again.</span>*/}
                     </form>
                 </section>
                 </UpperHoc>
