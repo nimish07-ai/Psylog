@@ -17,7 +17,7 @@ export default function New()
     const status = useSelector(selectStatusRecord);
     const success = useSelector(SuccessSelectorRecord);
     const Error = useSelector(selectErrorRecord);
-    console.log(status,success,Error,"ddddddddddddddddddddddd")
+    // console.log(status,success,Error,"ddddddddddddddddddddddd")
     const v = new Vtt();
     const dispatch = useDispatch();
     window.vv=v
@@ -117,13 +117,14 @@ let questions={
         sub.Json=JSON.stringify(sub.Json)
         dispatch(NewSubmitLink(sub))
         setHel2(1)
+        // console.log(setTimeout(ev=>{window.location.href="/record/list/"},2000))
     }
 
 
 
 
     return <>
-        <UpperHoc redirect="/record/list" Re={true}>
+        <UpperHoc redirect="/record/list" Re={true} >
         <section className={assesementcss["assessment"]}>
 
             {state.mode === -1 &&<>

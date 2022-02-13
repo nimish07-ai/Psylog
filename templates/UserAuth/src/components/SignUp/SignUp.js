@@ -40,7 +40,7 @@ export default function SignUp(props)
             <section className={Formcss["form-section"]}>
                 <h1 className={Formcss["form-heading"]}>Sign up with your email</h1>
                 <p className={Formcss["form-caption"]}>
-                    Already have an account? <a href="#">Sign in</a>
+                    Already have an account? <a href="/auth/login/">Sign in</a>
                 </p>
                 <form  onSubmit={ev=>{
 

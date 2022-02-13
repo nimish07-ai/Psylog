@@ -86,13 +86,16 @@ export const RecordSlice = createSlice({
                     state.SuccessMsg = "Record Submitted Succesfully "
                     state.status = "idle"
 
+                        console.log(true)
                 } else {
+                    console.log(false)
                     state.status = "idle"
                     state.Login = false
                     state.error = true
                     state.Success = false
                     state.error_msg ="some internal error"
                 }
+
             })
     }});
 

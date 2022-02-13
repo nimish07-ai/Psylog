@@ -17,7 +17,7 @@ export default function Landing()
             <h4 className={css["tagline"]}>
                 Assess yourself to keep a track of your mental weelbeing
             </h4>
-            <a href="" className={css["start"]}>Begin</a>
+            <a href="/record/new/" className={css["start"]}>Begin</a>
         </section>
 
 

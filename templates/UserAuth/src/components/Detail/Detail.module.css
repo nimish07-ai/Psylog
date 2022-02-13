@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.logs-section {
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.logs-section .logs-head {
+    font-family: "Josefin Sans", sans-serif;
+    color: #010101;
+    font-size: 34px;
+}
+
+.logs-section .logs-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 10px;
+    overflow-x: scroll;
+}
+
+.logs-section .logs-container::-webkit-scrollbar {
+    width: 3px;
+    background-color: #fdfdfd;
+}
+
+.logs-section .logs-container .log {
+    min-width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 15px 30px;
+    background-color: #F3F5F9;
+    -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.055) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.055) 0px 1px 3px 1px;
+}
+
+.logs-section .logs-container .log h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    color: #182A88;
+}
+
+.logs-section .logs-container .log p {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    color: #182A88;
+}
+
+.logs-section .logs-container .log .play-container {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.logs-section .logs-container .log .play-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-log {
+    width: 100vw;
+    overflow: hidden;
+    padding: 40px 100px;
+    margin-bottom: 100px;
+}
+
+.inner-log .inner-log-heading {
+    font-family: "Josefin Sans", sans-serif;
+    color: #010101;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.inner-log .question {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.inner-log .answer {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: #182A88;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .logs-section, .inner-log {
+        padding: 30px 37px;
+    }
+    .logs-section .logs-head, .inner-log .logs-head {
+        font-size: 26px;
+    }
+    .logs-section .logs-container, .inner-log .logs-container {
+        margin-top: 40px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .logs-section {
+        padding: 20px 15px;
+    }
+    .logs-section .logs-head {
+        font-size: 22px;
+    }
+    .logs-section .logs-container {
+        margin-left: 0;
+        margin-top: 20px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .logs-section .logs-container .log {
+        margin: 10px;
+    }
+    .inner-log {
+        padding: 10px 5px;
+    }
+    .inner-log .inner-log-heading {
+        font-size: 22px;
+    }
+    .inner-log .question {
+        font-size: 16px;
+    }
+    .inner-log .answer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .logs-section .logs-container .log {
+        min-width: 270px;
+    }
+}
+/*# sourceMappingURL=logs.css.map */

@@ -35,15 +35,18 @@ import {Button, CircularProgress, Snackbar} from "@material-ui/core";
 export default function UpperHoc (props)
 {
 
+
+
     const status = useSelector(selectStatus);
     const Error = useSelector(selectError);
     const Success = useSelector(SuccessSelector);
-    // console.log(Error,Success,"ss")
-    console.log(props.redirect,Error,Success,"dd    ")
+    // console.log(props)
+    // console.log(props.redirect,Error,Success,"dd    ")
+
     if (status ==="loading")
     {
         return<>
-            <div style={{"display":"flex","align-items":"center",}}>
+            <div style={{"display":"flex","align-items":"center",justifyContent:"center"}}>
             <CircularProgress color="success" />
             </div>
         </>

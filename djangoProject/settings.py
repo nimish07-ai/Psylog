@@ -24,8 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("Security_Key")
+SECRET_KEY = "django-insecure-dm@301wg(c7bib3%q$k$5y+ox!%wljhj&^$=m$1@+cwa$dw7@j"
 
+# SECURITY WARNING: don't run with debug turned on in production!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -49,7 +50,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'django_rest_passwordreset',
     "phonenumber_field",
-    "Recording"
+    "Recording",
 
 
 ]

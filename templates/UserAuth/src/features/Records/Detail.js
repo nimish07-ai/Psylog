@@ -8,11 +8,7 @@ export const DetailThunk = createAsyncThunk(
     {
 
 
-        const response= await  FetchCallSFK(
-            `/api/Record/Record/${id}/`,  "GET",
-            {},false,false,
-            ["results"], ["error"],
-        )
+
 
             console.log(response,"ssssssssssssssssssssss")
         return response

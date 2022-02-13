@@ -31,7 +31,7 @@ export default function Login(props)
                 <section className={Formcss["form-section"]} style={{"margin-top": "50px"}}>
                     <h1 className={Formcss["form-heading"]}>Sign in with your email</h1>
                     <p className={Formcss["form-caption"]}>
-                        Don't have an account? <a href="#">Sign up</a>
+                        Don't have an account? <a href="/auth/signup/">Sign up</a>
                     </p>
                     <form onSubmit={ev=>ev.preventDefault()} >
                         <div className={Formcss["input-div"]}>

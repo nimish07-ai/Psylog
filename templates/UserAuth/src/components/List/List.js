@@ -24,10 +24,12 @@ export default function List()
                 <div className={Listcss["logs-container"]}>
                     {
                         List_state.map(ev=>{
-                            return <div className={Listcss["log"]}>
+                            return <div className={Listcss["log"]}
+                                        onClick={ev2=>{window.location.href=`/record/detail/${ev.id}/`
+                                        }}>
 
-
-                                <h2>Lorem, ipsum.</h2>
+                                {console.log(ev.id)}
+                                <h2>{ev.Date}</h2>
                                 {/*<p>*/}
                                 {/*    Lorem ipsum dolor sit, amet consectetur adipisicing elit.*/}
                                 {/*    Necessitatibus, qui.*/}

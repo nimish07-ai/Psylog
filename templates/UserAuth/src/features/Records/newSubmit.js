@@ -13,6 +13,12 @@ export const NewSubmitLink = createAsyncThunk(
             body_sent,false,false,
             ["Audio"], ["Detail"],
         )
+        console.log(response)
+        if(response.type === true)
+        {
+            window.location.href=`/record/detail/${response.response.id}/`
+
+        }
         return response
 
     }
