@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+.assessment {
+    width: 100vw;
+}
+
+.assessment .assessment-intro {
+    width: 100%;
+    height: 85vh;
+    padding: 40px 100px;
+}
+
+.assessment .assessment-intro .assessment-intro-head {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 36px;
+    margin-top: 80px;
+}
+
+.assessment .assessment-intro .assessment-intro-caption {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.assessment .assessment-intro .assessment-start-btn {
+    color: #182a88;
+    -webkit-box-shadow: #182a88 0 0px 0px 2px inset;
+    box-shadow: #182a88 0 0px 0px 2px inset;
+    font-family: "Montserrat Alternates", sans-serif;
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    margin-top: 50px;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+
+.assessment .assessment-intro .assessment-start-btn:hover {
+    color: white;
+    -webkit-box-shadow: #182a88 0 80px 0px 2px inset;
+    box-shadow: #182a88 0 80px 0px 2px inset;
+}
+
+.assessment .assessment-mcq {
+    height: 85vh;
+    padding: 40px 100px;
+}
+
+.assessment .assessment-mcq .question {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 32px;
+    margin-top: 80px;
+    font-weight: 400;
+}
+
+.assessment .assessment-mcq .answer-list {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.assessment .assessment-mcq .answer-list .answer {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    border-radius: 10px;
+    border: 1px solid #182a88;
+    width: 400px;
+    padding: 15px;
+    margin: 30px 0;
+    cursor: pointer;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.assessment .assessment-mcq .answer-list .answer:focus, .assessment .assessment-mcq .answer-list .answer:hover {
+    background-color: #182a88;
+    color: white;
+}
+
+.assessment .assessment-mcq .pulse-box {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f72585;
+    -webkit-box-shadow: 0 0 0 0 #f72585;
+    box-shadow: 0 0 0 0 #f72585;
+    -webkit-animation: pulse-white 1s infinite;
+    animation: pulse-white 1s infinite;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.assessment .assessment-mcq .pulse-box img {
+    width: 20px;
+    height: 20px;
+}
+
+.assessment .assessment-mcq .next-question {
+    color: #182a88;
+    -webkit-box-shadow: #182a88 0 0px 0px 2px inset;
+    box-shadow: #182a88 0 0px 0px 2px inset;
+    font-family: "Montserrat Alternates", sans-serif;
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    margin-top: 20px;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.assessment .assessment-mcq .next-question:hover {
+    color: white;
+    -webkit-box-shadow: #182a88 0 80px 0px 2px inset;
+    box-shadow: #182a88 0 80px 0px 2px inset;
+}
+
+.assessment .assessment-desc {
+    height: 85vh;
+    padding: 40px 100px;
+}
+
+.assessment .assessment-desc .question {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 32px;
+    margin-top: 80px;
+    font-weight: 400;
+}
+
+.assessment .assessment-desc .desc-caption {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    margin-top: 100px;
+}
+
+.assessment .assessment-desc .pulse-box {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f72585;
+    -webkit-box-shadow: 0 0 0 0 #f72585;
+    box-shadow: 0 0 0 0 #f72585;
+    -webkit-animation: pulse-white 1s infinite;
+    animation: pulse-white 1s infinite;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.assessment .assessment-desc .pulse-box img {
+    width: 20px;
+    height: 20px;
+}
+
+.assessment .assessment-desc .next-question {
+    color: #182a88;
+    -webkit-box-shadow: #182a88 0 0px 0px 2px inset;
+    box-shadow: #182a88 0 0px 0px 2px inset;
+    font-family: "Montserrat Alternates", sans-serif;
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    margin-top: 30px;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 25px;
+}
+
+.assessment .assessment-desc .next-question:hover {
+    color: white;
+    -webkit-box-shadow: #182a88 0 80px 0px 2px inset;
+    box-shadow: #182a88 0 80px 0px 2px inset;
+}
+
+@media only screen and (max-width: 768px) {
+    .assessment .assessment-mcq .question, .assessment .assessment-desc .question {
+        margin-top: 80px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .assessment .assessment-intro {
+        padding: 5px 30px;
+    }
+    .assessment .assessment-intro .assessment-start-btn {
+        margin-top: 360px;
+        float: right;
+    }
+    .assessment .assessment-mcq, .assessment .assessment-desc {
+        padding: 10px 25px;
+    }
+    .assessment .assessment-mcq .question, .assessment .assessment-desc .question {
+        font-size: 24px;
+    }
+    .assessment .assessment-mcq .desc-caption, .assessment .assessment-desc .desc-caption {
+        margin-top: 50px;
+    }
+    .assessment .assessment-mcq .answer-list .answer, .assessment .assessment-desc .answer-list .answer {
+        width: 300px;
+        font-size: 14px;
+    }
+    .assessment .assessment-mcq .next-question, .assessment .assessment-desc .next-question {
+        float: right;
+        margin-right: 10px;
+        font-size: 14px;
+        margin-top: 150px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .assessment .assessment-mcq .question, .assessment .assessment-desc .question {
+        font-size: 18px;
+    }
+    .assessment .assessment-mcq .answer-list .answer, .assessment .assessment-desc .answer-list .answer {
+        width: 250px;
+        padding: 10px;
+    }
+    .assessment .assessment-mcq .next-question, .assessment .assessment-desc .next-question {
+        font-size: 14px;
+    }
+}
+
+@-webkit-keyframes pulse-white {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
+        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(247, 37, 133, 0);
+        box-shadow: 0 0 0 10px rgba(247, 37, 133, 0);
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
+        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
+    }
+}
+
+@keyframes pulse-white {
+    0% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
+        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
+    }
+    70% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-box-shadow: 0 0 0 10px rgba(247, 37, 133, 0);
+        box-shadow: 0 0 0 10px rgba(247, 37, 133, 0);
+    }
+    100% {
+        -webkit-transform: scale(0.95);
+        transform: scale(0.95);
+        -webkit-box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
+        box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
+    }
+}
+/*# sourceMappingURL=assessment.css.map */

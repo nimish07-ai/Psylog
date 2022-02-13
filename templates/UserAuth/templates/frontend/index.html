@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head >
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      {% load static %}
+      <title>WearPakau</title>
+      <script src="https://checkout.razorpay.com/v1/checkout.js" ></script>
+    <link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+      <style>
+
+          ul {
+              list-style-type: none !important;
+          }
+
+          li {
+              list-style-type: none !important;
+          }
+          .nimish {
+              position: absolute;
+              width: 100vw;
+              height: 100vh;
+              z-index: 500;
+              overflow: hidden;
+              background-color: gray;
+              opacity: 0.8;
+              left: 0;
+              top: 0;
+              display: none;
+              transition: width 2s, height 115s ease-in;
+
+          }
+      </style>
+  </head>
+  <script>
+      window.WP_navto="{{message}}"
+      {#console.log(WP_navto);#}
+      window.key="{{key}}"
+      {#console.log(key)#}
+      window.error="{{ error }}"
+      window.addressSet="{{addressSet}}"
+
+  </script>
+  <body id="app">
+    <script src="{% static "frontend/main.js" %}"></script>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+nav {
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    right: 70px;
+    top: 40px;
+    width: 400px;
+    height: 50px;
+    border-radius: 12px;
+    -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+nav ul {
+    list-style-type: none;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+nav ul li span {
+    width: 35px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ecd0ff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+nav ul li span img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+nav ul li img {
+    width: 20px;
+    height: 20px;
+    -webkit-transition: -webkit-transform 0.1s ease-in;
+    transition: -webkit-transform 0.1s ease-in;
+    transition: transform 0.1s ease-in;
+    transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
+}
+
+nav ul li img:hover {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        right: 30px;
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    nav {
+        width: 90%;
+        height: 60px;
+        bottom: 20px;
+        top: 90%;
+        right: 50%;
+        -webkit-transform: translate(50%, 0%);
+        transform: translate(50%, 0%);
+        -webkit-box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    }
+    nav ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+/*# sourceMappingURL=nav.css.map */
